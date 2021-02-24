@@ -29,6 +29,7 @@ before_install:
   - sudo apt install python3-rosdep
   - pip uninstall em
   - pip install empy
+  - pip install catkin_pkg
   - sudo rosdep init
   - rosdep update
 
