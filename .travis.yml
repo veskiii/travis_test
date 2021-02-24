@@ -26,7 +26,9 @@ before_install:
   - sudo apt update
   - sudo apt install ros-noetic-desktop-full
   - source /opt/ros/$ROS_DISTRO/setup.bash
-  - sudo apt install python3-rosdep python3-empy
+  - sudo apt install python3-rosdep
+  - pip uninstall em
+  - pip install empy
   - sudo rosdep init
   - rosdep update
 
