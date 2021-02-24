@@ -26,8 +26,9 @@ before_install:
   - sudo apt update
   - sudo apt install ros-noetic-desktop-full
   - source /opt/ros/$ROS_DISTRO/setup.bash
+  - sudo apt install python3-rosdep
   - sudo rosdep init
-  - rosdep update --include-eol-distros
+  - rosdep update
 
 install:
   - mkdir -p ~/catkin_ws/src
